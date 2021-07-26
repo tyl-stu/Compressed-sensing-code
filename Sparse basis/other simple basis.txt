@@ -1,0 +1,14 @@
+
+%% 注：以下均是 matlab 程序，其中 N 为信号长度
+
+1、傅里叶变换基  
+ Psi = fft(eye(N))/sqrt(N);
+
+2、余弦稀疏基
+ Psi = dctmtx(N);
+
+3、离散傅里叶变换基
+ Psi = dftmtx(N)/sqrt(N);
+
+4、单位阵
+Psi = eye(N);
